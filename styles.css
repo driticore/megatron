@@ -1,0 +1,213 @@
+@import url(TransformersMovie-y9Ad.ttf);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+main {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.logo {
+    margin: 0.1rem;
+    margin-top: 2%;
+    width: 80px;
+    color: rgb(0, 0, 0);
+    height: 80px;
+    backdrop-filter: opacity(0);
+    object-fit: contain;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    align-items: center;
+}
+
+.bgimage img {
+    position: absolute;
+    border-radius: 50px;
+    top: 8%;
+    right: 18%;
+    min-width: 50vw;
+    min-height: 80vh;
+    object-fit: contain;
+    z-index: -1;
+}
+
+.figure {
+    position: absolute;
+    width: 350px;
+    padding: 1rem;
+    height: 350px;
+    top: 25%;
+    right: 5%;
+    border-radius: 15px;
+    background: rgb(255, 255, 255);
+    z-index: 1;
+    transition: all .55s;
+}
+
+@font-face {
+    font-family: "Transformers Movie";
+    src: url('TransformersMovie-y9Ad.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: "Bayformance";
+    src: url("Bayformance.otf") format("opentype");
+  }
+  
+  /* Add font family to elements that should use the custom font */
+  .herotitle {
+    font-family: "Transformers Movie", sans-serif; /* Add font family here */
+    position: absolute;
+    text-align: center;
+    bottom: 65px;
+    left: 36%;
+    border-radius: 15px;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+  }
+
+  .hero-quote {
+    position: absolute;
+    background: white;
+    padding: 1rem;
+    border-radius: 15px;
+    top: 6%;
+    left: 10%;
+    font-family: "Bayformance" , sans-serif;
+    font-weight: 400;
+    transition: all .55s;
+  }
+
+  .hero-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 15px;
+    gap: 10px;
+    background-color: white;
+    margin-right: 55rem;
+    margin-top: 12rem;
+   
+    color: black;
+  }
+
+  .hero-text h1 {
+    font-family: "Transformers Movie", sans-serif; /* Add font family here */
+    font-size: 3rem;
+  }
+  
+  .container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 35%;
+  }
+
+  .display-date {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    transition: all .55s;
+
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 15px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+
+.display-time {
+    display: flex;
+    font-size: 5rem;
+    color: #ffffff;
+    backdrop-filter: blur(10px);
+    font-weight: bold;
+    border: 2px solid #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: ease-in-out 0.1s;
+    transition-property: background, box-shadow, color;
+    -webkit-box-reflect: below 2px
+      linear-gradient(transparent, rgba(255, 255, 255, 0.05));
+  }
+  
+  .display-time:hover {
+    background: #ffffff;
+    box-shadow: 0 0 30px#ffffff;
+    color: #000000;
+    cursor: pointer;
+  }
+
+  .container-btn {
+    margin-top: 1rem;
+  }
+
+  .container-btn button {
+    font-family: "Transformers Movie", sans-serif; /* Add font family here */
+    padding: 1rem;
+    font-size: 1.2rem;
+    outline: none;
+    border-radius: 15px;
+    background-color: white;
+  }
+
+  .container-btn button:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  
+  /* Tablet Layout */
+  
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .hero {
+      flex-direction: column;
+    }
+    .herotitle {
+      font-size: 3rem;
+    }
+    .hero-quote {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Mobile Layout */
+  
+  @media (max-width: 767px) {
+    .hero {
+      flex-direction: column;
+    }
+    .herotitle {
+      font-size: 2rem;
+    }
+    .hero-quote {
+      font-size: 1rem;
+    }
+  }
+
+/* Responsive Container Button */
+
+@media (max-width: 767px) {
+    .container-btn button {
+      font-size: 1rem;
+    }
+  }  
